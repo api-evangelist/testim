@@ -1,0 +1,108 @@
+aid: testim
+url: https://raw.githubusercontent.com/api-evangelist/testim/refs/heads/main/apis.yml
+name: Testim
+kind: company
+description: >-
+  Testim (acquired by Tricentis in 2022) is an AI-powered functional and end-to-end
+  test automation platform. The platform records, runs, and stabilises codeless and
+  code-based UI tests using AI-driven Smart Locators that learn DOM changes and
+  reduce flakiness. Testim covers web, mobile web, Salesforce, and Mainframe
+  testing, ships a Testim CLI for CI/CD integration, and exposes a REST API for
+  triggering test runs and retrieving execution results. Most platform endpoints
+  are partner-gated behind a workspace login and account-issued API token.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Testing
+  - Test Automation
+  - QA
+  - AI Testing
+  - End-to-End Testing
+  - CI/CD
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: testim:rest
+    name: Testim REST API
+    description: >-
+      REST API used to trigger and manage test executions, query test run status,
+      and retrieve results for tests authored in Testim. Authentication is via a
+      personal access token issued from the Testim workspace. Endpoint surface
+      and base URL are partner-gated and documented inside the Testim help
+      portal.
+    humanURL: https://help.testim.io/docs/api-access
+    baseURL: https://api.testim.io
+    tags:
+      - Test Runs
+      - Executions
+      - REST
+    properties:
+      - type: Documentation
+        url: https://help.testim.io/docs/api-access
+      - type: Authentication
+        url: https://help.testim.io/docs/api-access
+  - aid: testim:api-testing
+    name: Testim API Testing
+    description: >-
+      Authoring and execution surface for HTTP API tests inside Testim. Lets
+      teams compose, chain, assert, and run API test steps alongside UI tests
+      from the same Testim project, and trigger them via the Testim CLI or REST
+      API.
+    humanURL: https://help.testim.io/docs/api-testing
+    baseURL: https://help.testim.io/docs/api-testing
+    tags:
+      - API Testing
+      - Test Authoring
+    properties:
+      - type: Documentation
+        url: https://help.testim.io/docs/api-testing
+  - aid: testim:cli
+    name: Testim CLI
+    description: >-
+      Command-line interface used to run Testim tests locally and from CI/CD
+      pipelines (Jenkins, GitHub Actions, GitLab CI, CircleCI, Azure DevOps).
+      Accepts a project token and test/suite identifiers and streams results
+      back to the Testim workspace.
+    humanURL: https://help.testim.io/docs/integrate-testim-to-your-ci
+    baseURL: https://www.npmjs.com/package/@testim/testim-cli
+    tags:
+      - CLI
+      - CI/CD
+      - Local Runner
+    properties:
+      - type: Documentation
+        url: https://help.testim.io/docs/integrate-testim-to-your-ci
+      - type: Package
+        url: https://www.npmjs.com/package/@testim/testim-cli
+common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/testim-io
+  - type: Website
+    url: https://www.testim.io/
+  - type: Documentation
+    url: https://help.testim.io/docs/testim-overview
+  - type: GitHub
+    url: https://github.com/testimio
+  - type: Changelog
+    url: https://help.testim.io/changelog
+  - type: Parent
+    url: https://www.tricentis.com/
+  - type: Plans
+    url: plans/testim-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/testim-rate-limits.yml
+  - type: FinOps
+    url: finops/testim-finops.yml
+integrations:
+  - name: Jenkins
+  - name: GitHub Actions
+  - name: GitLab CI
+  - name: CircleCI
+  - name: Azure DevOps
+  - name: Jira
+  - name: Slack
+  - name: Sauce Labs
+  - name: BrowserStack
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
