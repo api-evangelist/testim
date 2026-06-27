@@ -83,7 +83,7 @@ common:
     url: https://help.testim.io/docs/testim-overview
   - type: GitHub
     url: https://github.com/testimio
-  - type: Changelog
+  - type: ChangeLog
     url: https://help.testim.io/changelog
   - type: Parent
     url: https://www.tricentis.com/
