@@ -75,6 +75,10 @@ apis:
       - type: Package
         url: https://www.npmjs.com/package/@testim/testim-cli
 common:
+  - type: DomainSecurity
+    url: security/testim-domain-security.yml
+  - url: https://www.testim.io/feed/
+    type: Blog
   - type: LinkedIn
     url: https://www.linkedin.com/company/testim-io
   - type: Website
