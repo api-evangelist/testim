@@ -10,7 +10,19 @@ description: >-
   testing, ships a Testim CLI for CI/CD integration, and exposes a REST API for
   triggering test runs and retrieving execution results. Most platform endpoints
   are partner-gated behind a workspace login and account-issued API token.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/testim.png
 tags:
   - Testing
   - Test Automation
