@@ -46,6 +46,10 @@ apis:
     baseURL: https://api.testim.io
     tags:
       - Test Runs
+      - Execution
+      - REST
+    tags_raw:
+      - Test Runs
       - Executions
       - REST
     properties:
