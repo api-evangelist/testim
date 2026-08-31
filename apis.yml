@@ -102,6 +102,11 @@ apis:
       - type: Package
         url: https://www.npmjs.com/package/@testim/testim-cli
 common:
+  - type: ParentCompany
+    url: https://apis.io/providers/tricentis/
+    name: Tricentis
+    x-relationship: acquired
+    x-evidence: "Testim (acquired by Tricentis in 2022) is an AI-powered functional and end-to-end test automation platform."
   - type: DomainSecurity
     url: security/testim-domain-security.yml
   - url: https://www.testim.io/feed/
